@@ -1,0 +1,18 @@
+# macOS system files - macOS creates hidden files in folders
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# VS Code folder(can contain user-specific configs)
+.vscode/
+
+# Log files - Ignore all .log files (debug output, errors, etc.)
+*.log
+
+# Temporary or backup files - Files created by editors during editing or saving
+*.tmp
+*.bak
+*~
+*.swp
+*.swo
