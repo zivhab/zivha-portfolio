@@ -1,4 +1,4 @@
-#Zivha Beharie | Portfolio Website
+# Zivha Beharie | Portfolio Website
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-deployed-blue)](https://zivhab.github.io/zivha-portfolio/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -10,6 +10,6 @@ Personal portfolio website showcasing my skills, projects, and experiences as a 
 🌐 **Live Site:** []
 
 ## Tech Stack
-HTML, CSS, JavaScript, TagCanvas.js
+### HTML, CSS, JavaScript, TagCanvas.js
 
-This project is still work in progress. 
+⚠️This project is still work in progress. 
