@@ -2,180 +2,298 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zivha Beharie | Computer Science Student & Developer</title>
-  <meta name="description" content="Zivha Beharie is a Computer Science student passionate about all things tech and creating impactful technology. Explore projects, CV, and contact info." />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="favicon.ico" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zivha Beharie | Portfolio</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Portfolio of Zivha Beharie, a Computer Science student in the United Kingdom">
+  <meta name="author" content="Zivha Beharie">
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Inter:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
-  <div id="top">
+<body id="top">
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="nav-floating">
+      <div class="logo">ZB</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#" id="nav-professional">Professional</a></li>
+        <li><a href="#" id="nav-personal">Personal</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="mailto:zivha.beharie@gmail.com" target="_blank" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5zm-.141-6.333c.63 0 1.141-.512 1.141-1.142v-9.05c0-.63-.511-1.142-1.141-1.142h-13.718c-.63 0-1.141.512-1.141 1.142v9.05c0 .63.511 1.142 1.141 1.142h13.718zm-6.859-4.058l-6.228-4.321-.014 7.712h12.457v-7.712l-6.215 4.321zm5.913-6.609c-1.745 1.215-5.913 4.153-5.913 4.153l-5.947-4.153h11.86z" />
+          </svg>
+        </a>
 
-    <!-- NAVIGATION -->
-    <nav class="navigation" role="navigation" aria-label="Main Navigation">
-      <div class="nav-wrapper">
-        <div class="nav-bar">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Current</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+        <a href="https://www.linkedin.com/in/zivhab/" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
 
-        <div class="nav-logo">
-          <h1 class="logo">ZB</h1>
-        </div>
-
-        <div class="nav-links">
-          <a href="mailto:zivha.beharie@gmail.com" target="_blank" aria-label="Email">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <title>Email</title>
-              <path d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5zm-.141-6.333c.63 0 1.141-.512 1.141-1.142v-9.05c0-.63-.511-1.142-1.141-1.142h-13.718c-.63 0-1.141.512-1.141 1.142v9.05c0 .63.511 1.142 1.141 1.142h13.718zm-6.859-4.058l-6.228-4.321-.014 7.712h12.457v-7.712l-6.215 4.321zm5.913-6.609c-1.745 1.215-5.913 4.153-5.913 4.153l-5.947-4.153h11.86z" />
-            </svg>
-          </a>
-
-          <a href="https://www.linkedin.com/in/zivhab/" target="_blank" aria-label="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <title>LinkedIn</title>
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-            </svg>
-          </a>
-
-          <a href="https://github.com/zivhab" target="_blank" aria-label="GitHub">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <title>GitHub</title>
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
-            </svg>
-          </a>
-        </div>
+        <a href="https://github.com/zivhab" target="_blank" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
+          </svg>
+        </a>
       </div>
     </nav>
+  </header>
 
-    <!-- HERO SECTION -->
-    <header class="hero">
-      <div class="hero-section background">
-        <div class="hero-content">
-          <h1 class="hero-title">Zivha Beharie</h1>
-          <p class="tagline">Computer Science Student</p>
-          <p class="intro">Using what I know to build what matters.</p>
-          <a href="assets/Zivha_Beharie_CV.pdf" target="_blank" class="hero-btn" aria-label="Download my CV">Download My CV</a>
+  <!-- HERO & ABOUT ME-->
+  <main>
+    <section id="hero" class="flex-container">
+      <!-- Hero Card -->
+      <div class="card hero-card fade-in">
+        <h1>Zivha Beharie</h1>
+        <img src="images/profile1.png" alt="Zivha Profile" class="profile-img">
+        <div id="professional">
+          <h2>Computer Science Student</h2>
+          <p>Using what I know to build what matters.</p>
+        </div>
+
+        <!-- Personal View -->
+        <div id="personal">
+          <h2>Student of Life</h2>
+          <p>Collecting experiences...one story at a time.</p>
         </div>
       </div>
-    </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="main-content">
-      <section id="about" class="section-about">
-        <div class="about-wrapper">
-          <h2>About Me</h2>
-          <p>Hi, I'm Zivha Beharie, a Computer Science student at the University of Essex.</p>
-          <p>Here's what I'm currently involved in:</p>
-          <ul class="roles">
-            <li><strong>Vice President</strong> – Computer Science and Electronic Engineering (CSEE) Society</li>
-            <li><strong>Session Leader</strong> – VTeam Coding Club</li>
-            <li><strong>Research Intern</strong> – AI-focused project (details coming soon)</li>
-            <li><strong>Teaching Assistant</strong> – ComputerXplorers</li>
-          </ul>
+      <!-- About Me Card -->
+      <div class="card about-card fade-in">
+        <h2>About Me</h2>
+
+        <!-- Professional Version -->
+        <div id="professional">
+          <p>
+            Hello, I'm Zivha, a 2nd-year Computer Science student at the University of Essex with a strong
+            academic record and growing experience in leadership, volunteer work, and teaching.
+          </p>
+          <p>
+            These experiences have shaped my holistic approach to problem-solving: understanding of
+            the broader system and objectives before refining each detail with precision and purpose. Analytical by
+            nature and meticulous in execution, I take pride in developing solutions that are functional, sustainable,
+            and human-centered.
+          </p>
+          <p>
+            I’m currently expanding my technical portfolio through projects in data science, AI and security,
+            while seeking internships to contribute to innovative projects and grow as a developer.
+          </p>
+          <p>
+            This portfolio documents my work and learning journey, feel free to explore and follow my progress.↓
+          </p>
         </div>
-      </section>
 
-      <!-- SKILLS -->
-      <section id="skills" class="section-skills">
-        <h2>My Skill Sphere</h2>
-        <canvas width="400" height="400" id="skillCanvas">Your browser does not support canvas.</canvas>
-        <div id="skillList">
+        <!-- Personal Version -->
+        <div id="personal">
+          <p>
+            Beyond my studies, I'm on a quieter journey of observation, emotion, and expression.
+            Through photography, writing, travel, and other creative ventures, I explore life embracing the messy,
+            imperfect, and beautiful process of growing, learning, and becoming.
+          </p>
+          <p>
+            This section will soon become a visual and written archive of that journey, documenting my growth in
+            finding the meaning in both the stillness and the chaos.
+          </p>
+          <div class="wip-banner">Personal section under construction</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--TOGGLE-->
+    <section id="theme-toggle">
+      <div class="toggle-container">
+        <span class="toggle-label left">The serious stuff</span>
+        <button id="theme-switch" class="theme-button"></button>
+        <span class="toggle-label right">The fun stuff :)</span>
+      </div>
+    </section>
+
+    <!--PROFESSIONAL SECTION-->
+    <section id="professional">
+      <!--EDUCATION-->
+      <div class="education-section">
+        <h3>/ Education</h3>
+        <div class="education-item fade-in">
+          <div class="top-row">
+            <span class="degree">BSc Computer Science</span>
+            <span class="date">2024 – 2027</span>
+          </div>
+          <span class="institution">University of Essex</span>
           <ul>
-            <li><a href="#">Python</a></li>
-            <li><a href="#">Java</a></li>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">SQL</a></li>
-            <li><a href="#">Git</a></li>
+            <li>First Year: Dean’s List of Excellence, K.F. Bowden Memorial Prize (Top 4 achievers)</li>
           </ul>
         </div>
-      </section>
+      </div>
 
-      <!-- PROJECTS -->
-      <section id="projects" class="section-projects main-content">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image-placeholder"></div>
-            <h3>Project Title</h3>
-            <p class="description">Short project description goes here.</p>
-            <p class="tool-stack">HTML, CSS, JavaScript</p>
-            <a href="#" class="project-link">View Project</a>
+      <!--EXPERIENCE-->
+      <div class="experience-section">
+        <h3>/ Experience</h3>
+        <div class="experience-item fade-in">
+          <div class="top-row">
+            <span class="role">Teaching Assistant</span>
+            <span class="date">Jun 2025 - Present</span>
           </div>
-
-          <div class="project-card">
-            <div class="project-image-placeholder"></div>
-            <h3>Another Project</h3>
-            <p class="description">Another short description of the project.</p>
-            <p class="tool-stack">HTML, CSS, JavaScript</p>
-            <a href="#" class="project-link">View Project</a>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image-placeholder"></div>
-            <h3>Another Project</h3>
-            <p class="description">Another short description of the project.</p>
-            <p class="tool-stack">HTML, CSS, JavaScript</p>
-            <a href="#" class="project-link">View Project</a>
-          </div>
+          <span class="company">ComputerXplorers Colchester</span>
         </div>
+
+        <div class="experience-item fade-in">
+          <div class="top-row">
+            <span class="role">Vice-President</span>
+            <span class="date">Jul 2025 - Present</span>
+          </div>
+          <span class="company">CSEE Society, University of Essex</span>
+        </div>
+        <div class="experience-item fade-in">
+          <div class="top-row">
+            <span class="role">Session Leader</span>
+            <span class="date">Oct 2025 - Present</span>
+          </div>
+          <span class="company">VTeam Coding Club, University of Essex </span>
+        </div>
+      </div>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills">
+        <h3>/ Skills Sphere</h3>
+        <p class="skills-description">Navigate through my interactive skill universe!</p>
+        <div class="skills-container" style="position:relative;">
+          <canvas width="350" height="350" id="skills-canvas"></canvas>
+          <div id="skills-tooltip"></div>
+        </div>
+        <ul id="skills-list">
+          <li><a href="#" title="Proficiency – Intermediate">Python</a></li>
+          <li><a href="#" title="Proficiency – Intermediate">Java</a></li>
+          <li><a href="#" title="Proficiency – Intermediate">JavaScript</a></li>
+          <li><a href="#" title="Proficiency – Intermediate">HTML</a></li>
+          <li><a href="#" title="Proficiency – Intermediate">CSS</a></li>
+          <li><a href="#" title="Proficiency – Intermediate">SQL</a></li>
+          <li><a href="#" title="Proficiency – Intermediate">Machine Learning</a></li>
+          <li><a href="#" title="Proficiency – Advanced">Data Science</a></li>
+          <li><a href="#" title="Proficiency – Beginner">Git & GitHub</a></li>
+          <li><a href="#" title="Proficiency – Beginner">Networking</a></li>
+          <li><a href="#" title="Proficiency – Beginner">Cybersecurity</a></li>
+          <li><a href="#" title="Proficiency – Beginner">C</a></li>
+        </ul>
       </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="section-contact">
-        <div class="contact-wrapper">
-          <h2>Contact</h2>
-          <p>Currently open to internships, research opportunities, and collaborative projects. Let’s connect!</p>
-          <ul class="contact-list">
-            <li><a href="mailto:zivha.beharie@gmail.com">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/zivhab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://github.com/zivhab" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          </ul>
+
+      <!-- Projects -->
+      <div class="projects-section">
+        <h3>/ Projects</h3>
+        <div class="wip-banner">
+          This portfolio is a work in progress – check back soon for more projects!
         </div>
-      </section>
-    </main>
+        <div class="project-cards">
+          <div class="project-card fade-in">
+            <img src="images/project1.png" alt="Project Image" loading="lazy">
+            <h4>Portfolio Website</h4>
+            <p>A responsive personal portfolio designed and developed from scratch to showcase my work, learning, and
+              technical journey.</p>
+            <span>Tools: HTML, CSS, JavaScript</span>
+            <a href="https://yourportfolio.com" target="_blank"><button>View Project</button></a>
+          </div>
+          <!-- <div class="project-card  fade-in">
+            <img src="images/placeholder.png" alt="Project Image" loading="lazy">
+            <h4>Project Title</h4>
+            <p>Brief project description goes here.</p>
+            <span>Tools: Python, JavaScript</span>
+            <button>View Project</button>
+          </div>
+          <div class="project-card  fade-in">
+            <img src="images/placeholder.png" alt="Project Image" loading="lazy">
+            <h4>Project Title</h4>
+            <p>Brief project description goes here.</p>
+            <span>Tools: Python, JavaScript</span>
+            <button>View Project</button>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!--PERSONAL SECTION-->
+    <section id="personal">
+      <p>Stay tuned to see this space transform!</p>
+    </section>
+
 
     <!-- FOOTER -->
     <footer>
-      <div class="footer">
-        <p>© Created by Zivha Beharie. All rights reserved.</p>
-        <a href="#top" class="back-to-top" aria-label="Back to Top">↑ Back to Top</a>
+      <p>© Created and Designed by Zivha Beharie 2025. All rights reserved.</p>
+
+      <div class="footer-links">
+        <a href="mailto:zivha.beharie@gmail.com" target="_blank" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+            <title>Email</title>
+            <path
+              d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5zm-.141-6.333c.63 0 1.141-.512 1.141-1.142v-9.05c0-.63-.511-1.142-1.141-1.142h-13.718c-.63 0-1.141.512-1.141 1.142v9.05c0 .63.511 1.142 1.141 1.142h13.718zm-6.859-4.058l-6.228-4.321-.014 7.712h12.457v-7.712l-6.215 4.321zm5.913-6.609c-1.745 1.215-5.913 4.153-5.913 4.153l-5.947-4.153h11.86z" />
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/zivhab/" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+            <title>LinkedIn</title>
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+
+        <a href="https://github.com/zivhab" target="_blank" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+            <title>GitHub</title>
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
+          </svg>
+        </a>
       </div>
+
+      <a href="#top" class="back-to-top">Back to Top ↑</a>
     </footer>
-  </div>
+  </main>
+  <!-- External scripts: defer so they don't block initial render -->
+  <script defer src="https://www.goat1000.com/tagcanvas.min.js"></script>
+  <script defer src="js/script.js"></script>
 
-  <script src="https://www.goat1000.com/tagcanvas.min.js"></script>
-  <script>
-    window.onload = function () {
-      try {
-        TagCanvas.Start('skillCanvas', 'skillList', {
-          textColour: '#1d3557',
-          outlineColour: '#91D4DF',
-          reverse: true,
-          depth: 0.8,
-          maxSpeed: 0.05,
-          initial: [0.1, -0.1],
-          fadeIn: 800,
-          wheelZoom: false,
-          outlineMethod: 'block',
-          clickToFront: 800,
-          zoom: 1,
-          textHeight: 15
-        });
-      } catch (e) {
-        console.log('TagCanvas error:', e);
-        document.getElementById('skillCanvas').style.display = 'none';
-      }
-    };
+  <!-- In case JS is disabled -->
+  <noscript>
+    <div class="noscript-warning">
+      Some interactive features require JavaScript. Please enable JavaScript for the best experience.
+    </div>
+  </noscript>
+
+  <!-- Basic structured data (update URL/sameAs links) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Zivha Beharie",
+    "url": "https://yourdomain.example/",
+    "sameAs": [
+      "https://www.linkedin.com/in/zivhab/",
+      "https://github.com/zivhab"
+    ]
+  }
   </script>
-
 </body>
 
 </html>
