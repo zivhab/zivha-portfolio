@@ -7,7 +7,7 @@
 
 Personal portfolio website showcasing my skills, projects, and experiences as a Computer Science student.
 
-🌐 **Live Site:** []
+🌐 **Live Site:** [https://zivhabeharie.netlify.app]
 
 ## Features
 - Interactive skills sphere using TagCanvas.js
