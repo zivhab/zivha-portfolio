@@ -1,32 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   // -----------------------
-  // TagCanvas Skills Sphere
-  // -----------------------
-  const canvas = document.getElementById("skills-canvas");
-  if (canvas && window.TagCanvas) {
-    try {
-      TagCanvas.Start("skills-canvas", "skills-list", {
-        textColour: getComputedStyle(document.documentElement)
-          .getPropertyValue('--color-accent').trim(),
-        outlineColour: "#838383ff",
-        outlineMethod: "colour",
-        reverse: true,
-        depth: 0.5,
-        maxSpeed: 0.05,
-        initial: [0.05, -0.02],
-        decel: 0.95,
-        freezeActive: true,
-        weight: true,
-        tooltip: "div",
-        tooltipContainer: "skills-tooltip"
-      });
-    } catch (e) {
-      console.error("TagCanvas error:", e);
-      canvas.closest(".skills-container")?.style.setProperty("display", "none");
-    }
-  }
-
-  // -----------------------
   // Theme Toggle
   // -----------------------
   const themeSwitch = document.getElementById("theme-switch");
@@ -65,6 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // -----------------------
+  // Scroll-triggered Fade-in Animations
+  // -----------------------
   const fadeEls = document.querySelectorAll('.fade-in');
 
   const observerOptions = {
@@ -83,5 +59,33 @@ document.addEventListener("DOMContentLoaded", function () {
   fadeEls.forEach((el) => {
     el.style.transitionDelay = "0s";
     fadeInObserver.observe(el);
+  });
+
+  // -----------------------
+  // TagCanvas Skills Sphere
+  // -----------------------
+  window.addEventListener("load", () => {
+    const canvas = document.getElementById("skills-canvas");
+    if (canvas && window.TagCanvas) {
+      try {
+        TagCanvas.Start("skills-canvas", "skills-list", {
+          textColour: "#76d2e0ff",
+          outlineColour: "#5a5a5aff",
+          outlineMethod: "colour",
+          reverse: true,
+          depth: 0.5,
+          maxSpeed: 0.05,
+          initial: [0.05, -0.02],
+          decel: 0.95,
+          freezeActive: true,
+          weight: true,
+          tooltip: "div",
+          tooltipContainer: "skills-tooltip"
+        });
+      } catch (e) {
+        console.error("TagCanvas error:", e);
+        canvas.closest(".skills-container")?.style.setProperty("display", "none");
+      }
+    }
   });
 });
