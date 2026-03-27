@@ -1,65 +1,62 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // -----------------------
-  // Theme Toggle
-  // -----------------------
+  // Elements
   const themeSwitch = document.getElementById("theme-switch");
   const body = document.body;
   const leftLabel = document.querySelector(".toggle-label.left");
   const rightLabel = document.querySelector(".toggle-label.right");
 
-  const toggleTheme = (isPersonal) => {
-    body.classList.toggle("personal", isPersonal);
-  };
-
-  themeSwitch.addEventListener("click", () =>
-    body.classList.toggle("personal")
-  );
-
-  leftLabel.addEventListener("click", () => toggleTheme(false));
-  rightLabel.addEventListener("click", () => toggleTheme(true));
-
-  // -----------------------
-  // Navbar Links for Mode Switching
-  // -----------------------
   const navPersonal = document.getElementById("nav-personal");
   const navProfessional = document.getElementById("nav-professional");
 
-  if (navPersonal) {
-    navPersonal.addEventListener("click", (e) => {
-      e.preventDefault();
-      body.classList.add("personal");
-    });
-  }
-
-  if (navProfessional) {
-    navProfessional.addEventListener("click", (e) => {
-      e.preventDefault();
-      body.classList.remove("personal");
-    });
-  }
-
   // -----------------------
-  // Scroll-triggered Fade-in Animations
+  // Theme Toggle Function
   // -----------------------
-  const fadeEls = document.querySelectorAll('.fade-in');
+  const toggleTheme = (isPersonal) => {
+    body.classList.toggle("personal", isPersonal);
 
-  const observerOptions = {
-    threshold: 0.05
+    // Scroll to top
+    document.getElementById("top").scrollIntoView({ behavior: "smooth" });
+
+    // Update aria-pressed for accessibility
+    themeSwitch.setAttribute("aria-pressed", isPersonal);
   };
+
+  // -----------------------
+  // Event Listeners
+  // -----------------------
+  themeSwitch?.addEventListener("click", () => {
+    toggleTheme(!body.classList.contains("personal"));
+  });
+
+  leftLabel?.addEventListener("click", () => toggleTheme(false));
+  rightLabel?.addEventListener("click", () => toggleTheme(true));
+
+  navPersonal?.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggleTheme(true);
+  });
+
+  navProfessional?.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggleTheme(false);
+  });
+
+  // -----------------------
+  // Fade-in on scroll
+  // -----------------------
+  const fadeEls = document.querySelectorAll(".fade-in");
+  const observerOptions = { threshold: 0.05 };
 
   const fadeInObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('show');
+        entry.target.classList.add("show");
         observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
-  fadeEls.forEach((el) => {
-    el.style.transitionDelay = "0s";
-    fadeInObserver.observe(el);
-  });
+  fadeEls.forEach(el => fadeInObserver.observe(el));
 
   // -----------------------
   // TagCanvas Skills Sphere
