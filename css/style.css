@@ -300,9 +300,8 @@ section h3 {
     text-align: left;
 }
 
-/* ---------- Education & Experience ---------- */
-.education-item,
-.experience-item {
+/* ---------- Universal Timeline Card ---------- */
+.timeline-item {
     display: flex;
     flex-direction: column;
     background-color: var(--color-light-bg);
@@ -313,49 +312,42 @@ section h3 {
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.education-item .top-row,
-.experience-item .top-row {
+.timeline-item .top-row {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 10px;
 }
 
-.education-item .degree,
-.experience-item .role {
+.timeline-item .title {
     font-weight: 600;
     font-size: 18px;
 }
 
-.education-item .date,
-.experience-item .date {
+.timeline-item .date {
     color: #555;
     font-size: 14px;
 }
 
-.education-item .institution,
-.experience-item .company {
+.timeline-item .subtitle {
     font-weight: 400;
     font-size: 16px;
     color: #555;
 }
 
-.education-item ul {
+.timeline-item ul {
     margin: 5px 0 0 1rem;
     padding-left: 1rem;
     line-height: 1.4;
 }
 
 @media (max-width: 768px) {
-
-    .education-item .top-row,
-    .experience-item .top-row {
+    .timeline-item .top-row {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .education-item .date,
-    .experience-item .date {
+    .timeline-item .date {
         margin-top: 4px;
     }
 }
