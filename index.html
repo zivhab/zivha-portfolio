@@ -6,52 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="VfvGN2LdZH9_RqF2Udwt7zgP5R9yPvtlkOHXqfHwfp8" />
   <title>Zivha Beharie | Portfolio</title>
-
-  <!-- SEO Meta -->
-  <meta name="description" content="Portfolio of Zivha Beharie, a Computer Science student in the United Kingdom">
+  <meta name="description" content="Portfolio of Zivha Beharie, Computer Science student at University of Essex">
   <meta name="author" content="Zivha Beharie">
-
-  <!-- Preconnect for fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Inter:wght@400;600&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=Caveat:wght@400;600;700&family=Lora:ital,wght@0,400;1,400;1,600&display=swap"
     rel="stylesheet">
-
-  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico">
-
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body id="top">
-  <!-- NAVIGATION -->
+
+  <!-- ═══ NAVIGATION ═══ -->
   <header>
     <nav class="nav-floating">
-      <div class="logo">ZB</div>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#" id="nav-professional">Professional</a></li>
-        <li><a href="#" id="nav-personal">Personal</a></li>
+      <!-- Hamburger (mobile only) -->
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-      <div class="social-icons">
-        <a href="mailto:zivha.beharie@gmail.com" target="_blank" aria-label="Email">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+
+      <div class="nav-right">
+        <a href="/cdn-cgi/l/email-protection#c8b2a1bea0a9e6aaada0a9baa1ad88afa5a9a1a4e6aba7a5" aria-label="Email"
+          class="nav-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
             <path
               d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5zm-.141-6.333c.63 0 1.141-.512 1.141-1.142v-9.05c0-.63-.511-1.142-1.141-1.142h-13.718c-.63 0-1.141.512-1.141 1.142v9.05c0 .63.511 1.142 1.141 1.142h13.718zm-6.859-4.058l-6.228-4.321-.014 7.712h12.457v-7.712l-6.215 4.321zm5.913-6.609c-1.745 1.215-5.913 4.153-5.913 4.153l-5.947-4.153h11.86z" />
           </svg>
         </a>
-
-        <a href="https://www.linkedin.com/in/zivhab/" target="_blank" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+        <a href="https://www.linkedin.com/in/zivhab/" target="_blank" aria-label="LinkedIn" class="nav-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
             <path
               d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
           </svg>
         </a>
-
-        <a href="https://github.com/zivhab" target="_blank" aria-label="GitHub">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+        <a href="https://github.com/zivhab" target="_blank" aria-label="GitHub" class="nav-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
             <path
               d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
           </svg>
@@ -60,280 +60,618 @@
     </nav>
   </header>
 
-  <!-- HERO & ABOUT ME-->
   <main>
-    <section id="hero" class="flex-container">
-      <!-- Hero Card -->
-      <div class="card hero-card fade-in" id="hero-professional">
-        <h1>Zivha Beharie</h1>
-        <img src="images/profile1.png" alt="Zivha Profile" class="profile-img">
-        <h2>Computer Science Student</h2>
-        <p>Engineering innovation and empowering impact to create solutions that matter.</p>
+
+    <!-- ═══ HERO ═══ -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge" id="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Open to internships &amp; opportunities</span>
+        </div>
+
+        <!-- Professional -->
+        <div id="hero-professional">
+          <h1 class="hero-name">Zivha<br><em>Beharie</em></h1>
+          <p class="hero-title-line">
+            <span class="typewriter" data-words='["Computer Science Student"]'></span>
+          </p>
+          <div class="hero-interests">
+            <span class="interest-tag tag-teal">Technology</span>
+            <span class="interest-tag tag-gold">Business</span>
+            <span class="interest-tag tag-neutral">Mindset</span>
+            <span class="interest-tag tag-green">Sustainability</span>
+          </div>
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">See my work</a>
+            <a href="#contact" class="btn-secondary">Get in touch</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-num">Top 4</span><span class="stat-label">Year 1 Achievers</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Projects</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num">100+</span><span class="stat-label">Volunteer Hours</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">Languages</span></div>
+          </div>
+        </div>
+
+        <!-- Personal -->
+        <div id="hero-personal" style="display:none">
+          <h1 class="hero-name hero-name-personal">Zivha<br><em>Beharie</em></h1>
+          <p class="hero-meaning">"the one in whom all things lie"</p>
+          <p class="hero-tagline-personal">Collecting experiences · One story at a time · Student of life</p>
+          <div class="hero-cta">
+            <a href="#about" class="btn-primary-personal">My story</a>
+          </div>
+        </div>
       </div>
 
-      <!-- Personal Hero Card -->
-      <div class="card hero-card fade-in" id="hero-personal">
-        <h1>Zivha Beharie</h1>
-        <img src="images/profile1.png" alt="Zivha Profile" class="profile-img">
-        <h2>Student of Life</h2>
-        <p>Collecting experiences...one story at a time.</p>
+      <div class="hero-image-wrap">
+        <div class="hero-image-ring"></div>
+        <div class="hero-image-ring ring-2"></div>
+        <img src="images/profile1.png" alt="Zivha Beharie" class="profile-img">
+        <div class="hero-image-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+          Hello World!
+        </div>
       </div>
 
-    <!-- About Me Card -->
-    <div class="card about-card fade-in">
-      <h2>About Me</h2>
+      <div class="scroll-hint">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
 
-      <!-- Professional Version -->
+    <!-- ═══ TOGGLE ═══ -->
+    <section class="toggle-section">
+      <div class="toggle-inner">
+        <span class="toggle-label left" id="nav-professional">Professional</span>
+        <button id="theme-switch" class="theme-button" aria-pressed="false" aria-label="Toggle theme">
+          <span class="thumb"></span>
+        </button>
+        <span class="toggle-label right" id="nav-personal">Personal</span>
+      </div>
+      <p class="toggle-hint" id="toggle-hint-text">Viewing: The serious stuff</p>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════════════ -->
+    <section id="about" class="about-section fade-in">
+
+      <!-- Professional About -->
       <div id="about-professional">
-        <p>
-          Hello, I'm Zivha Beharie, a 2nd-year Computer Science student at the University of Essex with a passionate
-          for engineering innovation and using technology to create meaningful impact.
-        </p>
-        <p>
-          Through projects, certifications, and independent work, I am building a foundation in critical thinking,
-          problem-solving, and programming, approaching challenges with a balanced perspective to reach effective and
-          adaptable solutions.
-        </p>
-        <p>
-          I’m committed to continuous learning and expanding my skills through research, projects, and industry
-          experience, with the long-term goal of launching my own tech venture.
-        </p>
-        <p>
-          This portfolio showcases my journey so far, feel free to explore and follow my progress. ↓
-        </p>
+        <div class="section-label">About</div>
+        <h2 class="section-title">Engineering with intention,<br><em>building toward impact</em></h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Currently a 2nd-year Computer Science student at the <strong>University of Essex</strong>, where I
+              ranked in the <strong>top 4</strong> in my first year and received the K.F. Bowden Memorial Prize
+              along the way. My focus is on artificial intelligence, data science, and security, three fields that
+              together essentially determine how the next decade of technology gets built. </p>
+            <p> I’m especially drawn to this intersection, where intelligent systems meet real-world constraints and
+              security isn't an
+              afterthought but a foundation.</p>
+            <p>Outside of lectures, I've led lessons, projects and communities because I think the people
+              building technology should understand the people it's built for. Most of what I know came from doing it
+              wrong first. I care about the practical side: building things that solve real problems and reshape how we
+              live and work.</p>
+
+            <p>Away from the screen, I live in books, speculative fiction or philosophy depending on my mood; in music,
+              classical or K-pop depending on the time of day; and in the kitchen, where baking is my version of
+              debugging life.</p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">🏆</div>
+              <div>
+                <strong>Academic Recognition</strong>
+                <span>K.F. Bowden Memorial Prize - ranking top 4 in Computer Science</span>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🌍</div>
+              <div>
+                <strong>Built Across Borders</strong>
+                <span>Raised in South Africa, studying in the UK, interning in Germany.</span>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🧠</div>
+              <div>
+                <strong>Thinker & Tinkerer</strong>
+                <span>My approach: breaking things and building them back better.</span>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🤝</div>
+              <div>
+                <strong>Community-first</strong>
+                <span>Guided by the idea that even small help can go a long way.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
 
-      <!-- Personal Version -->
-      <div id="about-personal">
-        <p>
-          Beyond my studies, I'm on a quieter journey of observation, emotion, and expression.
-          Through photography, writing, travel, and other creative ventures, I explore life embracing the messy,
-          imperfect, and beautiful process of growing, learning, and becoming.
-        </p>
-        <p>
-          This section will soon become a visual and written archive of that journey, documenting my growth in
-          finding the meaning in both the stillness and the chaos.
-        </p>
-        <div class="wip-banner">Personal section under construction</div>
+      <!-- Personal About -->
+      <div id="about-personal" style="display:none">
+        <div class="section-label personal-label">About Me</div>
+        <h2 class="section-title personal-title">Beyond the code,<br><em>there's a story</em></h2>
+        <div class="about-personal-layout">
+          <div class="personal-text">
+            <p class="personal-intro">Outside of my academic life, I'm on a quieter journey of observation, emotion, and
+              expression.</p>
+            <p>Through photography, writing, travel, and other creative ventures, I explore life by embracing the messy,
+              imperfect, and beautiful process of growing, learning, and becoming.</p>
+            <p>This section will soon become a visual and written archive of that journey, documenting growth in finding
+              meaning in both the stillness and the chaos.</p>
+          </div>
+          <div class="personal-wip">
+            <div class="wip-card">
+              <div class="wip-icon">✦</div>
+              <h3>Coming Soon</h3>
+              <p>A gallery of adventures, essays, and moments captured. Stay tuned.</p>
+              <div class="wip-tags">
+                <span>Photography</span><span>Writing</span><span>Travel</span><span>Books</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
     </section>
 
 
-    <!--TOGGLE-->
-    <section id="theme-toggle">
-      <div class="toggle-container">
-        <span class="toggle-label left">The serious stuff</span>
-        <button id="theme-switch" class="theme-button"></button>
-        <span class="toggle-label right">The fun stuff :)</span>
-      </div>
-    </section>
-
-    <!--PROFESSIONAL SECTION-->
-    <section id="main-professional">
+    <!-- ═══════════════════════════════════════════
+         PROFESSIONAL CONTENT
+    ═══════════════════════════════════════════ -->
+    <div id="main-professional">
 
       <!-- EDUCATION -->
-      <section id="education">
-        <h3>/ Education</h3>
-        <div class="timeline-item fade-in">
-          <div class="top-row">
-            <span class="title">BSc Computer Science</span>
-            <span class="date">2024 – 2027</span>
+      <section id="education" class="timeline-section fade-in">
+        <div class="section-label">Education</div>
+        <h2 class="section-title">Where I'm <em>learning</em></h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="tl-title">BSc Computer Science</h3>
+                  <p class="tl-sub">University of Essex · Colchester, UK</p>
+                </div>
+                <span class="tl-date">2024 – 2027</span>
+              </div>
+              <div class="tl-tags">
+                <span class="tag tag-gold">🏆 K.F. Bowden Prize (Top 4)</span>
+                <span class="tag tag-gold">Dean's List of Excellence</span>
+              </div>
+              <p class="tl-note"><strong>Year 2 modules:</strong> Data Structures &amp; Algorithms · Software
+                Engineering · Application Programming · Databases &amp; IR · Artificial Intelligence · Data Science ·
+                Computer Security</p>
+            </div>
           </div>
-          <span class="subtitle">University of Essex, Colchester, UK</span>
-          <ul>
-            <li><strong>Year 1:</strong> 87% (Distinction), Dean’s List of Excellence, K.F. Bowden Memorial Prize (Top 4
-              achievers)</li>
-            <li><strong>Year 2 (Current):</strong> Data Structures & Algorithms, Software Engineering, Application
-              Programming,
-              Databases & Information Retrieval, Artificial Intelligence, Data Science, Computer Security</li>
-          </ul>
         </div>
       </section>
 
-      <!-- EXPERIENCE -->
-      <section id="experience">
-        <h3>/ Experience</h3>
-        <div class="timeline-item fade-in">
-          <div class="top-row">
-            <span class="title">Lead Instructor & Teaching Assistant</span>
-            <span class="date">Jul 2025 – Present</span>
-          </div>
-          <span class="subtitle">ComputerXplorers, Colchester, UK</span>
-        </div>
-      </section>
+      <!-- EXPERIENCE — ordered by recency -->
+      <section id="experience" class="timeline-section fade-in">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title">What I've <em>been doing</em></h2>
+        <div class="timeline">
 
-      <!-- LEADERSHIP / COMMUNITY -->
-      <section id="leadership">
-        <h3>/ Leadership & Community</h3>
-        <div class="timeline-item fade-in">
-          <div class="top-row">
-            <span class="title">Vice President</span>
-            <span class="date">Jun 2025 – Jun 2026</span>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="tl-title">Lead Instructor &amp; Teaching Assistant</h3>
+                  <p class="tl-sub">ComputerXplorers · Colchester, UK</p>
+                </div>
+                <span class="tl-date">Jul 2025 – Present</span>
+              </div>
+              <p class="tl-note">Delivering coding and STEM workshops for children aged 5–14 using Python, Micro:bit,
+                LEGO Engineering, Bloxels, and Minecraft Education. Lead Instructor for Python classes of 4–6 students,
+                including full lesson planning and delivery.</p>
+            </div>
           </div>
-          <span class="subtitle">Computer Science & Electronic Engineering Society</span>
-        </div>
 
-        <div class="timeline-item fade-in">
-          <div class="top-row">
-            <span class="title">Communications Officer & Session Leader</span>
-            <span class="date">Jan 2025 – Present</span>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="tl-title">Vice President</h3>
+                  <p class="tl-sub">CS &amp; Electronic Engineering Society · University of Essex</p>
+                </div>
+                <span class="tl-date">Jun 2025 – Jun 2026</span>
+              </div>
+              <p class="tl-note">Supporting committee operations, communications, and event coordination. Managing the
+                society's social media strategy and content, increasing engagement and attendance.</p>
+            </div>
           </div>
-          <span class="subtitle">VTeam Coding Club (University of Essex)</span>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="tl-title">Communications Officer &amp; Session Leader</h3>
+                  <p class="tl-sub">VTeam Coding Club · University of Essex</p>
+                </div>
+                <span class="tl-date">Jan 2025 – Present</span>
+              </div>
+              <p class="tl-note">Coordinating volunteer onboarding, scheduling, and logistics for after-school coding
+                activities. Leading Python sessions with Micro:bit at local schools, trained to assist and lead in
+                curriculum delivery.</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- CERTIFICATIONS -->
-      <section id="certifications">
-        <h3>/ Certifications</h3>
-        <div class="timeline-item fade-in">
-          <div class="top-row">
-            <span class="title">Cisco CCNA 1: Introduction to Networks</span>
-            <span class="date">2025</span>
+      <section id="certifications" class="certs-section fade-in">
+        <div class="section-label">Certifications</div>
+        <h2 class="section-title">What I <em>have learned</em></h2>
+        <div class="cert-cards">
+          <div class="cert-card">
+            <div class="cert-logo">🌐</div>
+            <div class="cert-body">
+              <h4>Cisco CCNA 1: Introduction to Networks</h4>
+              <span>Cisco Networking Academy · May 2025</span>
+              <p>IP addressing, Ethernet switching, VLANs, static routing, DHCP, and network security.</p>
+            </div>
           </div>
-          <span class="subtitle">Cisco Networking Academy</span>
-        </div>
-
-        <div class="timeline-item fade-in">
-          <div class="top-row">
-            <span class="title">Data Science & Machine Learning</span>
-            <span class="date">2023</span>
+          <div class="cert-card">
+            <div class="cert-logo">🤖</div>
+            <div class="cert-body">
+              <h4>Data Science &amp; Machine Learning</h4>
+              <span>MITxIDSS · Jul 2023 · <strong>95% — Top 20 in cohort</strong></span>
+              <p>Regression, classification, deep learning, recommendation systems, and generative AI.</p>
+            </div>
           </div>
-          <span class="subtitle">MIT IDSS (Greater Learning)</span>
-        </div>
-
-        <div class="timeline-item fade-in">
-          <div class="top-row">
-            <span class="title">Blockchain & Digital Currency</span>
-            <span class="date">2021</span>
+          <div class="cert-card">
+            <div class="cert-logo">⛓</div>
+            <div class="cert-body">
+              <h4>Blockchain &amp; Digital Currency</h4>
+              <span>University of Cape Town · Dec 2021 · <strong>84%</strong></span>
+              <p>Blockchain technology, decentralisation, digital currency, and financial systems evolution.</p>
+            </div>
           </div>
-          <span class="subtitle">University of Cape Town</span>
         </div>
       </section>
 
-      <!-- SKILLS SECTION -->
-      <section id="skills">
-        <h3>/ Skills Sphere</h3>
-        <p class="skills-description">Navigate through my interactive skill universe!</p>
-        <div class="skills-container" style="position:relative;">
-          <canvas width="350" height="350" id="skills-canvas"></canvas>
-          <div id="skills-tooltip"></div>
-        </div>
-        <ul id="skills-list">
-          <li><a href="#" title="Proficiency – Intermediate">Python</a></li>
-          <li><a href="#" title="Proficiency – Intermediate">Java</a></li>
-          <li><a href="#" title="Proficiency – Intermediate">JavaScript</a></li>
-          <li><a href="#" title="Proficiency – Intermediate">HTML</a></li>
-          <li><a href="#" title="Proficiency – Intermediate">CSS</a></li>
-          <li><a href="#" title="Proficiency – Intermediate">SQL</a></li>
-          <li><a href="#" title="Proficiency – Intermediate">Machine Learning</a></li>
-          <li><a href="#" title="Proficiency – Advanced">Data Science</a></li>
-          <li><a href="#" title="Proficiency – Beginner">MATLAB</a></li>
-          <li><a href="#" title="Proficiency – Beginner">Bash</a></li>
-          <li><a href="#" title="Proficiency – Beginner">Git & GitHub</a></li>
-          <li><a href="#" title="Proficiency – Beginner">Networking</a></li>
-          <li><a href="#" title="Proficiency – Beginner">Cybersecurity</a></li>
-          <li><a href="#" title="Proficiency – Beginner">C</a></li>
-        </ul>
-      </section>
+      <!-- PROJECTS -->
+      <section id="projects" class="projects-section fade-in">
+        <div class="section-label">Projects</div>
+        <h2 class="section-title">What I <em>have built</em></h2>
+        <div class="project-grid">
 
-      <!-- Projects -->
-      <div class="projects-section">
-        <h3>/ Projects</h3>
-        <div class="project-cards">
-          <div class="project-card fade-in">
-            <img src="images/project1.png" alt="Project Image" loading="lazy">
-            <h4>Portfolio Website</h4>
-            <p>A responsive personal portfolio designed and developed from scratch to showcase my work, learning, and
-              technical journey.</p>
-            <span>Tools: HTML, CSS, JavaScript</span>
-            <a href="https://github.com/zivhab/zivha-portfolio" target="_blank"><button>View Project</button></a>
+          <div class="project-card featured">
+            <div class="project-img-wrap">
+              <img src="images/project1.png" alt="CureZea Heart Disease Prediction" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/zivhab/Data-Science-with-a-Heart" target="_blank" class="overlay-btn">View
+                  Project ↗</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-num">01</span>
+                <span class="project-type">Team Lead</span>
+              </div>
+              <h3>CureZea — Heart Disease Prediction</h3>
+              <p>Led a 4-member Agile team building ML models to predict heart disease from 303 patient records.
+                Achieved 87% accuracy with Random Forest and built an interactive Tkinter GUI.</p>
+              <div class="project-stack">
+                <span>Python</span><span>scikit-learn</span><span>Tkinter</span><span>pandas</span><span>NumPy</span>
+              </div>
+              <div class="project-stat-row">
+                <span class="pstat">🎯 87% accuracy</span>
+                <span class="pstat pstat-gold">✦ Graded 100%</span>
+              </div>
+              <a href="https://github.com/zivhab/Data-Science-with-a-Heart" target="_blank" class="project-link">View
+                on GitHub ↗</a>
+            </div>
           </div>
-          <div class="project-card  fade-in">
-            <img src="images/project2.png" alt="Project Image" loading="lazy">
-            <h4>Product Recommendation System</h4>
-            <p>Developed a collaborative filtering system that generates personalized product recommendations based on
-              user ratings from millions of Amazon reviews.</p>
-            <span>Tools: Python, Pandas, NumPy, Seaborn</span>
-            <a href="https://eportfolio.mygreatlearning.com/zivha-beharie" target="_blank"><button>View
-                Project</button></a>
+
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="images/project2.png" alt="Amazon Recommendation System" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://eportfolio.mygreatlearning.com/zivha-beharie" target="_blank" class="overlay-btn">View
+                  Project ↗</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-num">02</span>
+                <span class="project-type">Machine Learning</span>
+              </div>
+              <h3>Amazon Product Recommendation System</h3>
+              <p>Collaborative filtering system using SVD matrix factorisation on 7M+ Amazon ratings.
+                Hyperparameter-tuned to ~87% F1 score with 85% precision and 88% recall.</p>
+              <div class="project-stack">
+                <span>Python</span><span>Surprise</span><span>pandas</span><span>Seaborn</span>
+              </div>
+              <div class="project-stat-row">
+                <span class="pstat">📊 7M+ ratings</span>
+                <span class="pstat">🎯 ~87% F1</span>
+              </div>
+              <a href="https://eportfolio.mygreatlearning.com/zivha-beharie" target="_blank" class="project-link">View
+                on ePortfolio ↗</a>
+            </div>
           </div>
-          <div class="project-card  fade-in">
-            <img src="images/project3.png" alt="Project Image" loading="lazy">
-            <h4>Java Weather App</h4>
-            <p>A simple desktop application that displays current weather and a 5-day forecast for a city using the
-              Open-Meteo API.</p>
-            <span>Tools: Java, Open-Meteo API</span>
-            <a href="https://github.com/zivhab/java-weather-app" target="_blank"><button>View Project</button></a>
+
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="images/project3.png" alt="Java Weather App" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/zivhab/java-weather-app" target="_blank" class="overlay-btn">View on GitHub
+                  ↗</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-num">03</span>
+                <span class="project-type">Desktop App</span>
+              </div>
+              <h3>Java Weather App</h3>
+              <p>Desktop application showing real-time weather and a 5-day forecast via the Open-Meteo API. Features a
+                clean Swing GUI with city search functionality.</p>
+              <div class="project-stack">
+                <span>Java</span><span>Swing</span><span>Open-Meteo API</span>
+              </div>
+              <a href="https://github.com/zivhab/java-weather-app" target="_blank" class="project-link">View on GitHub
+                ↗</a>
+            </div>
           </div>
+
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="images/project4.png" alt="FoodHub Data Analysis" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://eportfolio.mygreatlearning.com/zivha-beharie" target="_blank" class="overlay-btn">View
+                  Project ↗</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-num">04</span>
+                <span class="project-type">Data Analysis</span>
+              </div>
+              <h3>FoodHub Data Analysis</h3>
+              <p>Analysed 1,898 food delivery orders, estimating $25K+ revenue potential and identifying 11% operational
+                delays with actionable recommendations.</p>
+              <div class="project-stack">
+                <span>Python</span><span>pandas</span><span>Matplotlib</span><span>Seaborn</span>
+              </div>
+              <div class="project-stat-row">
+                <span class="pstat">💰 $25K+ revenue insight</span>
+              </div>
+              <a href="https://eportfolio.mygreatlearning.com/zivha-beharie" target="_blank" class="project-link">View
+                on ePortfolio ↗</a>
+            </div>
+          </div>
+
+        </div><!-- end project-grid -->
+      </section><!-- end #projects -->
+
+      <!-- SKILLS -->
+      <section id="skills" class="skills-section fade-in">
+        <div class="section-label">Skills</div>
+        <h2 class="section-title">My <em>technical toolkit</em></h2>
+        <div class="skills-layout">
+
+          <!-- Sphere -->
+          <div class="skills-sphere-wrap">
+            <p class="skills-description">Spin me around</p>
+            <div class="skills-container">
+              <canvas width="440" height="440" id="skills-canvas"></canvas>
+              <div id="skills-tooltip"></div>
+            </div>
+            <ul id="skills-list">
+              <li><a href="#">Python</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">HTML/CSS</a></li>
+              <li><a href="#">SQL</a></li>
+              <li><a href="#">Machine Learning</a></li>
+              <li><a href="#">Data Science</a></li>
+              <li><a href="#">MATLAB</a></li>
+              <li><a href="#">Bash</a></li>
+              <li><a href="#">Git &amp; GitHub</a></li>
+              <li><a href="#">Networking</a></li>
+              <li><a href="#">Cybersecurity</a></li>
+              <li><a href="#">scikit-learn</a></li>
+              <li><a href="#">pandas</a></li>
+              <li><a href="#">NumPy</a></li>
+            </ul>
+          </div>
+
+          <!-- Right column: competency chips + languages -->
+          <div class="skills-right">
+
+            <div class="competency-block">
+              <h3 class="skills-sub-title">Core Competencies</h3>
+              <div class="chip-group">
+                <span class="chip chip-prog">Python</span>
+                <span class="chip chip-prog">Java</span>
+                <span class="chip chip-prog">SQL</span>
+                <span class="chip chip-prog">HTML / CSS</span>
+              </div>
+
+              <h4 class="chip-category">Data Science &amp; AI</h4>
+              <div class="chip-group">
+                <span class="chip chip-data">pandas</span>
+                <span class="chip chip-data">NumPy</span>
+                <span class="chip chip-data">Matplotlib</span>
+                <span class="chip chip-data">Seaborn</span>
+                <span class="chip chip-data">ML Models</span>
+              </div>
+
+              <h4 class="chip-category">Tools &amp; Frameworks</h4>
+              <div class="chip-group">
+                <span class="chip chip-tools">Git / GitHub</span>
+                <span class="chip chip-tools">VS Code</span>
+                <span class="chip chip-tools">Jupyter</span>
+                <span class="chip chip-tools">IntelliJ IDEA</span>
+
+              </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="languages-block">
+              <h3 class="skills-sub-title">Languages</h3>
+              <div class="lang-list">
+                <div class="lang-item">
+                  <span class="lang-flag">🇬🇧</span>
+                  <div class="lang-info">
+                    <strong>English</strong>
+                    <span>Native</span>
+                  </div>
+                  <div class="lang-dots">
+                    <span class="dot dot-fill"></span><span class="dot dot-fill"></span><span
+                      class="dot dot-fill"></span><span class="dot dot-fill"></span><span class="dot dot-fill"></span>
+                  </div>
+                </div>
+                <div class="lang-item">
+                  <span class="lang-flag">🇰🇷</span>
+                  <div class="lang-info">
+                    <strong>Korean</strong>
+                    <span>TOPIK Level 4 — Upper Intermediate</span>
+                  </div>
+                  <div class="lang-dots">
+                    <span class="dot dot-fill"></span><span class="dot dot-fill"></span><span
+                      class="dot dot-fill"></span><span class="dot dot-fill"></span><span class="dot dot-empty"></span>
+                  </div>
+                </div>
+                <div class="lang-item">
+                  <span class="lang-flag">🇩🇪</span>
+                  <div class="lang-info">
+                    <strong>German</strong>
+                    <span>A2 — Elementary</span>
+                  </div>
+                  <div class="lang-dots">
+                    <span class="dot dot-fill"></span><span class="dot dot-fill"></span><span
+                      class="dot dot-empty"></span><span class="dot dot-empty"></span><span
+                      class="dot dot-empty"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- end skills-right -->
+        </div><!-- end skills-layout -->
+      </section><!-- end #skills -->
+
+    </div><!-- end #main-professional -->
+
+
+    <!-- ═══════════════════════════════════════════
+         PERSONAL SECTION
+    ═══════════════════════════════════════════ -->
+    <div id="main-personal" style="display:none">
+      <section class="personal-coming-soon fade-in">
+        <div class="coming-soon-content">
+          <h2 class="personal-section-title">This space is<br><em>taking shape</em></h2>
+          <p>A collection of the parts of me that don’t fit neatly into code — moments captured, thoughts written, places wandered, and lessons collected along the way.</p>
+          <div class="coming-soon-grid">
+            <div class="cs-tile">📸 Photography</div>
+            <div class="cs-tile">🥨 Food</div>
+            <div class="cs-tile">🌍 Travel</div>
+            <div class="cs-tile">🎨 Art</div>
+            <div class="cs-tile">📚 Books</div>
+            <div class="cs-tile">🎶 Playlists</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════════
+         CONTACT — compact two-column layout
+    ═══════════════════════════════════════════ -->
+    <section id="contact" class="contact-section fade-in">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <div class="section-label contact-label">Contact</div>
+          <h2 class="contact-title">Let's <em>connect</em></h2>
+          <p class="contact-sub">Open to opportunities, collaborations, or a good conversation.</p>
+        </div>
+        <div class="contact-right">
+          <a href="/cdn-cgi/l/email-protection#dca6b5aab4bdf2beb9b4bdaeb5b99cbbb1bdb5b0f2bfb3b1" class="contact-card">
+            <div class="contact-icon">✉</div>
+            <div><strong>Email</strong><span><span class="__cf_email__"
+                  data-cfemail="502a392638317e3235383122393510373d31393c7e333f3d">[email&#160;protected]</span></span>
+            </div>
+            <span class="contact-arrow">↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/zivhab/" target="_blank" class="contact-card">
+            <div class="contact-icon">in</div>
+            <div><strong>LinkedIn</strong><span>/in/zivhab</span></div>
+            <span class="contact-arrow">↗</span>
+          </a>
+          <a href="https://github.com/zivhab" target="_blank" class="contact-card">
+            <div class="contact-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+            </div>
+            <div><strong>GitHub</strong><span>/zivhab</span></div>
+            <span class="contact-arrow">↗</span>
+          </a>
         </div>
       </div>
     </section>
 
-
-    <!--PERSONAL SECTION-->
-    <section id="main-personal">
-      <p>Stay tuned to see this space transform!</p>
-    </section>
   </main>
 
   <!-- FOOTER -->
   <footer>
-    <p>© Created and Designed by Zivha Beharie 2025. All rights reserved.</p>
-
-    <div class="footer-links">
-      <a href="mailto:zivha.beharie@gmail.com" target="_blank" aria-label="Email">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
-          <title>Email</title>
-          <path
-            d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5zm-.141-6.333c.63 0 1.141-.512 1.141-1.142v-9.05c0-.63-.511-1.142-1.141-1.142h-13.718c-.63 0-1.141.512-1.141 1.142v9.05c0 .63.511 1.142 1.141 1.142h13.718zm-6.859-4.058l-6.228-4.321-.014 7.712h12.457v-7.712l-6.215 4.321zm5.913-6.609c-1.745 1.215-5.913 4.153-5.913 4.153l-5.947-4.153h11.86z" />
-        </svg>
-      </a>
-
-      <a href="https://www.linkedin.com/in/zivhab/" target="_blank" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
-          <title>LinkedIn</title>
-          <path
-            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-        </svg>
-      </a>
-
-      <a href="https://github.com/zivhab" target="_blank" aria-label="GitHub">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
-          <title>GitHub</title>
-          <path
-            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
-        </svg>
-      </a>
+    <div class="footer-inner">
+      <span class="footer-logo">ZB</span>
+      <p>© Created &amp; Designed by Zivha Beharie 2026</p>
+      <a href="#top" class="back-to-top">↑ Top</a>
     </div>
-
-    <a href="#top" class="back-to-top">Back to Top ↑</a>
   </footer>
 
-  <!-- External scripts: defer so they don't block initial render -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script defer src="https://www.goat1000.com/tagcanvas.min.js"></script>
   <script defer src="js/script.js"></script>
 
-  <!-- In case JS is disabled -->
   <noscript>
-    <div class="noscript-warning">
-      Some interactive features require JavaScript. Please enable JavaScript for the best experience.
+    <div style="background:#fff3cd;color:#856404;text-align:center;padding:10px;font-size:14px;">
+      Some features require JavaScript.
     </div>
   </noscript>
 
-  <!-- Basic structured data (update URL/sameAs links) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Zivha Beharie",
-    "url": "https://zivhabeharie.netlify.app",
-    "sameAs": [
-      "https://www.linkedin.com/in/zivhab/",
-      "https://github.com/zivhab"
-    ]
-  }
+  {"@context":"https://schema.org","@type":"Person","name":"Zivha Beharie","url":"https://zivhabeharie.netlify.app","sameAs":["https://www.linkedin.com/in/zivhab/","https://github.com/zivhab"]}
   </script>
+
 </body>
 
 </html>
