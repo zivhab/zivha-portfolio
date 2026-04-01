@@ -202,10 +202,11 @@ body.personal .nav-icon:hover svg { color: var(--p-pink); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 48px;
-  padding: 90px 0 60px;
+  gap: 64px;
+  padding: 90px 40px 60px;
   position: relative;
   overflow: hidden;
+  max-width: 1200px;
 }
 
 /* Hex-grid background */
@@ -246,7 +247,7 @@ body.personal .hero-glow {
 
 @keyframes float { 0%,100%{transform:translateY(0) scale(1);} 50%{transform:translateY(-18px) scale(1.04);} }
 
-.hero-content { flex: 1; position: relative; z-index: 1; max-width: 560px; }
+.hero-content { flex: 1; position: relative; z-index: 1; max-width: 560px; min-width: 0; }
 
 .hero-badge {
   display: inline-flex; align-items: center; gap: 8px;
@@ -277,7 +278,7 @@ body.personal .hero-glow {
 
 .hero-meaning {
   font-family: var(--font-hand);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   color: var(--p-pink-dark);
   margin: -8px 0 14px;
   font-style: italic;
@@ -310,7 +311,7 @@ body.personal .hero-glow {
 .tag-neutral { background: rgba(93,113,117,0.1); color: var(--color-muted); border: 1px solid rgba(93,113,117,0.2); }
 
 .hero-tagline-personal {
-  font-family: var(--font-hand); font-size: 1.25rem;
+  font-family: var(--font-hand); font-size: 1.3rem;
   color: var(--personal-muted); margin: 0 0 32px;
   animation: slideUp 0.7s 0.3s ease both;
 }
@@ -354,7 +355,7 @@ body.personal .hero-glow {
 .stat-divider { width: 1px; height: 28px; background: var(--color-border); }
 
 /* Hero image */
-.hero-image-wrap { position: relative; flex-shrink: 0; z-index: 1; animation: slideUp 0.8s 0.15s ease both; }
+.hero-image-wrap { position: relative; flex-shrink: 0; z-index: 1; animation: slideUp 0.8s 0.15s ease both; max-width: 340px; width: 100%; }
 
 .profile-img {
   width: 320px; height: 320px; object-fit: cover;
@@ -366,7 +367,7 @@ body.personal .hero-glow {
 .profile-img:hover { border-radius: 50%; }
 
 .hero-image-ring { position: absolute; border: 1.5px dashed rgba(12,192,223,0.36); border-radius: 50%; animation: spin 22s linear infinite; z-index: 1; inset: -20px; }
-.ring-2 { inset: -40px; border-color: rgba(255,189,89,0.24); animation-direction: reverse; animation-duration: 30s; }
+.ring-2 { inset: -25px; border-color: rgba(255,189,89,0.24); animation-direction: reverse; animation-duration: 30s; }
 
 body.personal .hero-image-ring { border-color: rgba(255,125,164,0.36); }
 body.personal .ring-2 { border-color: rgba(74,222,221,0.22); }
@@ -521,7 +522,6 @@ body.personal .section-title { font-family:var(--font-personal); color:var(--per
 
 .project-card { background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg); overflow:hidden; transition:box-shadow var(--transition),transform var(--transition),border-color var(--transition); display:flex; flex-direction:column; }
 .project-card:hover { box-shadow:0 12px 36px var(--teal-glow); transform:translateY(-4px); border-color:rgba(12,192,223,0.4); }
-.project-card.featured { border-color:var(--teal); box-shadow:0 0 0 1px var(--teal),var(--shadow-md); }
 
 .project-img-wrap { position:relative; overflow:hidden; }
 .project-img-wrap img { width:100%; height:180px; object-fit:cover; transition:transform 0.5s ease; filter:brightness(0.88); }
