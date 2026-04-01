@@ -206,7 +206,7 @@ body.personal .nav-icon:hover svg { color: var(--p-pink); }
   padding: 90px 40px 60px;
   position: relative;
   overflow: hidden;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 /* Hex-grid background */
