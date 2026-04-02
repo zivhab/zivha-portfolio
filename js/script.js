@@ -161,11 +161,13 @@ document.addEventListener("DOMContentLoaded", function () {
           maxSpeed: 0.04,
           initial: [0.04, -0.02],
           decel: 0.95,
-          freezeActive: true,
+          freezeActive: false,
           weight: true,
           weightMode: "size",
           tooltip: "div",
-          tooltipContainer: "skills-tooltip"
+          tooltipContainer: "skills-tooltip",
+          autoRotate: 0.5,
+          noSelect: true
         });
       } catch (e) {
         const c = canvas.closest(".skills-container");
