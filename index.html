@@ -37,8 +37,8 @@
       </ul>
 
       <div class="nav-right">
-        <a href="/cdn-cgi/l/email-protection#c8b2a1bea0a9e6aaada0a9baa1ad88afa5a9a1a4e6aba7a5" aria-label="Email"
-          class="nav-icon">
+        <!-- FIX 1: was class="contact-card", now class="nav-icon" -->
+        <a href="mailto:zivha.beharie@gmail.com" aria-label="Email" class="nav-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
             <path
               d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5zm-.141-6.333c.63 0 1.141-.512 1.141-1.142v-9.05c0-.63-.511-1.142-1.141-1.142h-13.718c-.63 0-1.141.512-1.141 1.142v9.05c0 .63.511 1.142 1.141 1.142h13.718zm-6.859-4.058l-6.228-4.321-.014 7.712h12.457v-7.712l-6.215 4.321zm5.913-6.609c-1.745 1.215-5.913 4.153-5.913 4.153l-5.947-4.153h11.86z" />
@@ -77,7 +77,8 @@
         <div id="hero-professional">
           <h1 class="hero-name">Zivha<br><em>Beharie</em></h1>
           <p class="hero-title-line">
-            <span class="typewriter" data-words='["Computer Science Student", "Data Scientist", "STEM Educator", "Volunteer"]'></span>
+            <span class="typewriter"
+              data-words='["Computer Science Student", "Data Scientist", "STEM Educator", "Volunteer"]'></span>
           </p>
           <div class="hero-interests">
             <span class="interest-tag tag-teal">Technology</span>
@@ -96,7 +97,8 @@
             <div class="stat-divider"></div>
             <div class="stat"><span class="stat-num">100+</span><span class="stat-label">Volunteer Hours</span></div>
             <div class="stat-divider"></div>
-            <div class="stat"><span class="stat-num">3</span><span class="stat-label">Languages</span></div>
+            <!-- FIX 2: shortened stat-num so it doesn't overflow on mobile -->
+            <div class="stat"><span class="stat-num">Winner</span><span class="stat-label">Emerging STEM Educator 2026</span></div>
           </div>
         </div>
 
@@ -157,7 +159,7 @@
               ranked in the <strong>top 4</strong> in my first year and received the K.F. Bowden Memorial Prize
               along the way. My focus is on artificial intelligence, data science, and security, three fields that
               together essentially determine how the next decade of technology gets built. </p>
-            <p> I’m especially drawn to this intersection, where intelligent systems meet real-world constraints and
+            <p> I'm especially drawn to this intersection, where intelligent systems meet real-world constraints and
               security isn't an
               afterthought but a foundation.</p>
             <p>Outside of lectures, I've led lessons, projects and communities because I think the people
@@ -187,7 +189,7 @@
             <div class="highlight-card">
               <div class="highlight-icon">🧠</div>
               <div>
-                <strong>Thinker & Tinkerer</strong>
+                <strong>Thinker &amp; Tinkerer</strong>
                 <span>My approach: breaking things and building them back better.</span>
               </div>
             </div>
@@ -201,7 +203,7 @@
           </div>
         </div>
       </div>
-      </div>
+      <!-- FIX 3: removed stray extra </div> that was here -->
 
       <!-- Personal About -->
       <div id="about-personal" style="display:none">
@@ -537,7 +539,6 @@
                 <span class="chip chip-tools">VS Code</span>
                 <span class="chip chip-tools">Jupyter</span>
                 <span class="chip chip-tools">IntelliJ IDEA</span>
-
               </div>
             </div>
 
@@ -596,7 +597,8 @@
       <section class="personal-coming-soon fade-in">
         <div class="coming-soon-content">
           <h2 class="personal-section-title">This space is<br><em>taking shape</em></h2>
-          <p>A collection of the parts of me that don’t fit neatly into code — moments captured, thoughts written, places wandered, and lessons collected along the way.</p>
+          <p>A collection of the parts of me that don't fit neatly into code — moments captured, thoughts written,
+            places wandered, and lessons collected along the way.</p>
           <div class="coming-soon-grid">
             <div class="cs-tile">📸 Photography</div>
             <div class="cs-tile">🥨 Food</div>
@@ -611,7 +613,7 @@
 
 
     <!-- ═══════════════════════════════════════════
-         CONTACT — compact two-column layout
+         CONTACT
     ═══════════════════════════════════════════ -->
     <section id="contact" class="contact-section fade-in">
       <div class="contact-inner">
@@ -621,10 +623,12 @@
           <p class="contact-sub">Open to opportunities, collaborations, or a good conversation.</p>
         </div>
         <div class="contact-right">
-          <a href="/cdn-cgi/l/email-protection#dca6b5aab4bdf2beb9b4bdaeb5b99cbbb1bdb5b0f2bfb3b1" class="contact-card">
+          <!-- FIX 4: href and display text now match; placeholder removed -->
+          <a href="mailto:zivha.beharie@gmail.com" class="contact-card">
             <div class="contact-icon">✉</div>
-            <div><strong>Email</strong><span><span class="__cf_email__"
-                  data-cfemail="502a392638317e3235383122393510373d31393c7e333f3d">[email&#160;protected]</span></span>
+            <div>
+              <strong>Email</strong>
+              <span>zivha.beharie@gmail.com</span>
             </div>
             <span class="contact-arrow">↗</span>
           </a>
@@ -646,6 +650,7 @@
         </div>
       </div>
     </section>
+    <!-- FIX 5: removed unused #contact-modal entirely -->
 
   </main>
 
@@ -658,7 +663,7 @@
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <!-- FIX 6: removed Cloudflare email-decode script (not needed on Netlify) -->
   <script defer src="https://www.goat1000.com/tagcanvas.min.js"></script>
   <script defer src="js/script.js"></script>
 

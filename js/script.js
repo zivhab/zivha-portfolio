@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
       hamburger?.classList.remove("open");
     }
   });
-
   // ─── Theme Toggle ────────────────────────────────────────────
   const show = (el) => {
     if (!el) return;

@@ -745,3 +745,49 @@ body.personal footer { background: rgba(35, 8, 18, 1); }
   .hero-image-ring, .ring-2 { display:none; }
   .scroll-hint { display:none; }
 }
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: var(--color-surface);
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  width: min(420px, 90vw);
+  box-shadow: var(--shadow-lg);
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  font-family: var(--font-body);
+}
+
+.modal-content button {
+  background: var(--teal);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
